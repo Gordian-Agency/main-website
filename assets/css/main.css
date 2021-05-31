@@ -41,7 +41,7 @@ body{
 		background-position: 0% 50%;
 	}
 }
-.banner-btn ul li{
+.banner-btn ul li, .banner-logo ul li{
     display: inline-block;
 }
 
@@ -113,7 +113,7 @@ body{
 .banner-wrap::after{
     content: '';
     position:absolute;
-    top: 79px;
+    top: 114px;
     left: -20%;
     transform: translateX(0%);
     width: 45%;
@@ -177,6 +177,15 @@ body{
     background: #25bbf1;
     color:#e9f7fc;
 }
+.banner-logo{
+    margin-bottom:27px;
+}
+.banner-logo ul li a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 14px;
+}
 .mt-6{
     margin-top:5rem;
 }
@@ -193,7 +202,7 @@ body{
 .about{
     padding: 135px 0px 60px 0px;
 }
-.heading, .heading-right, .heading-service, .heading-success, .purpose-heading, .heading-faq{
+.heading, .heading-right, .heading-service, .heading-success, .purpose-heading, .heading-faq, .audit-heading{
     display: inline-block;
     z-index: 0;
     position: relative;
@@ -205,7 +214,7 @@ body{
     width: 148%;
     left: 0px;
 }
-.heading::after, .heading-right::after, .heading-service::after, .heading-success::after, .purpose-heading::after, .heading-faq::after{
+.heading::after, .heading-right::after, .heading-service::after, .heading-success::after, .purpose-heading::after, .heading-faq::after, .audit-heading::after{
     position: absolute;
     content: '';
     background: #00AEEF;
@@ -242,6 +251,12 @@ body{
     width: 239%;
     left: 0px;
 }
+.audit-heading::after{
+    transform: translateX(-40%);
+    height: 100%;
+    width: 180%;
+    left: 0px;
+}
 .about h1, .partner-sec h1, .success h1, .services-sec h1, .purpose h1, .faq-sec h1{
     position: relative;
     color:rgb(255, 255, 255);
@@ -269,7 +284,7 @@ body{
 .services-sec{
     background:#212121;
 }
-.service-block, .faq-block{
+.service-block, .faq-block, .audit-heading{
     margin-top:30px;
 }
 .service-block img{
@@ -286,7 +301,7 @@ body{
 .service-block p{
     line-height: 26px;
 }
-.purpose-heading, .process-content h3{
+.purpose-heading, .process-content h3, .audit-heading{
     margin-bottom:30px;
 }
 .article-block{
@@ -317,6 +332,18 @@ body{
     z-index: -1;
     background: url(../images/faq-logo.png);
     background-repeat:no-repeat;
+}
+.faq-block h3{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+.pr{
+    padding-right: 20px;
+}
+.pl{
+    padding-left:20px;
 }
 footer{
     background-color: #A8A8A8;
@@ -427,6 +454,15 @@ footer{
     .purpose-heading::after{
         width:160%;
     }
+    .audit-heading::after{
+        width: 158%;
+    }
+    .pr{
+        padding-right: calc(var(--bs-gutter-x)/ 2)
+    }
+    .pl{
+        padding-left: calc(var(--bs-gutter-x)/ 2)
+    }
 }
 @media only screen and (max-width: 767px) and (min-width: 375px) {
     .about h1, .partner-sec h1, .success h1, .services-sec h1, .purpose h1, .faq-sec h1{
@@ -456,6 +492,9 @@ footer{
         transform: translateX(-4%);
         width: 95%;
     }
+    .audit-heading::after{
+        width: 154%;
+    }
     .faq-sec::after{
         width: 40%;
     }
@@ -464,6 +503,12 @@ footer{
     }
     .sub-footer{
         line-height: 26px;
+    }
+    .pr{
+        padding-right: calc(var(--bs-gutter-x)/ 2)
+    }
+    .pl{
+        padding-left: calc(var(--bs-gutter-x)/ 2)
     }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -599,7 +644,7 @@ footer{
 }
 @media (min-width: 1366px){
     .banner{
-        margin: 105px 0px 0px;
+        margin: 90px 0px 0px;
         text-align: left;
     }
     .about-block a{
