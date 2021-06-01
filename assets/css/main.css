@@ -46,7 +46,7 @@ body{
 }
 
 .tp-nav li{
-    position: relative; 
+    position: relative;
 }
 .tp-nav li a{
     color:#fff!important;
@@ -55,7 +55,7 @@ body{
     text-transform: uppercase;
     padding: .9rem 1.3rem!important;
 }
-.tp-nav li a:after {    
+.tp-nav li a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -69,9 +69,9 @@ body{
     filter: blur(0.05rem);
     -webkit-filter: blur(0.05rem);
   }
-  .tp-nav li a:hover:after { 
-    width: 100%; 
-    left: 0; 
+  .tp-nav li a:hover:after {
+    width: 100%;
+    left: 0;
   }
 .navbar-sec{
     position: relative;
@@ -173,7 +173,7 @@ body{
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
-.banner-btn li a:hover{ 
+.banner-btn li a:hover{
     background: #25bbf1;
     color:#e9f7fc;
 }
@@ -370,7 +370,7 @@ footer{
 .footer-sm ul li a{
     position: relative;
 }
-.footer-sm ul li a:after{    
+.footer-sm ul li a:after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -384,9 +384,9 @@ footer{
     filter: blur(0.05rem);
     -webkit-filter: blur(0.05rem);
   }
-  .footer-sm ul li a:hover:after { 
-    width: 100%; 
-    left: 0; 
+  .footer-sm ul li a:hover:after {
+    width: 100%;
+    left: 0;
   }
 .footer-sm ul{
     margin-top:25px;
@@ -538,7 +538,7 @@ footer{
         width: 61%;
         top: 133px;
     }
-    
+
 }
 @media only screen and (max-width: 1340px) and (min-width: 1024px) {
     .heading-right::after{
@@ -610,7 +610,7 @@ footer{
     }
 
 }
-@media (min-width: 812px){                          
+@media (min-width: 812px){
         .about-block a{
         min-height: 571px;
         }
@@ -620,7 +620,7 @@ footer{
     }
     @media(min-width:1024px){
         .banner{
-            margin: 150px 0px 0px;
+            margin: 100px 0px 0px;
         }
         .banner-text{
             margin-top: 100px;
@@ -655,6 +655,6 @@ footer{
 @media (min-width: 1400px){
 }
 @media (min-width: 1600px){
-    
+
 }
 @media (min-width: 2000px){}
