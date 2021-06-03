@@ -182,9 +182,9 @@ body{
 }
 .banner-logo ul li a{
     display: block;
-    width: 25px;
-    height: 25px;
-    margin-right: 14px;
+    width: 42px;
+    height: 42px;
+    margin-right: 23px;
 }
 .mt-6{
     margin-top:5rem;
@@ -309,6 +309,24 @@ body{
 }
 .article-block h3{
     margin:30px 0px;
+}
+.article-block ul{
+    margin: 0px 0px 20px 40px;
+}
+.article-block ul li{
+    position: relative;
+    padding-left: 40px;
+    line-height: 28px;
+}
+.article-block ul li::before{
+    top:2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    content: '';
+    background:url(../images/small-arrow.png);
+    background-repeat: no-repeat;  
 }
 .process-block{
     display: flex;
@@ -503,6 +521,9 @@ footer{
     }
     .sub-footer{
         line-height: 26px;
+    }
+    .article-block ul {
+        margin: 0px 0px 20px 16px;
     }
     .pr{
         padding-right: calc(var(--bs-gutter-x)/ 2)
