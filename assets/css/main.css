@@ -41,6 +41,31 @@ body{
 		background-position: 0% 50%;
 	}
 }
+
+.annoucement{
+    background-color: white;
+    padding: 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.annoucement p {
+    margin: 0px;
+    font-weight: 600;
+}
+
+.annoucement a{
+    color: #0784b1;
+}
+
+.annoucement img{
+    height: 25px;
+    width: 25px;
+}
+
 .banner-btn ul li, .banner-logo ul li{
     display: inline-block;
 }
